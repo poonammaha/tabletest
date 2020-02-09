@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: center;
+            padding: 8px;
+        }
+        tr .border
+        {
+            border:1px solid #cccc;
+        }
+        
+@media (max-width: 760px)  {
+
+	
+	table, th, td, tr { 
+		display: block; 
+	}
+	
+	
+	 table tr { 
+		/*position: absolute;*/
+		top: -9999px;
+		left: -9999px;
+	}
+
+    th{display: none;}
+	
+	tr  { border: 1px solid #ccc; }
+	
+	td { 
+	
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+    table td:nth-child(1),table td:nth-child(2) {
+ 
+        padding-left:0;
+    }
+    table td:nth-child(3),table td:nth-child(4),table td:nth-child(5),table td:nth-child(6),table td:nth-child(7) {
+ text-align: left;
+}
+    tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+	
+	/*
+	Label the data
+	*/
+	td:nth-of-type(1):before { content: ""; }
+    td:nth-of-type(2):before { content: ""; }
+    td:nth-of-type(3):before { content: "Product"; }
+	td:nth-of-type(4):before { content: "Name"; }
+	td:nth-of-type(5):before { content: "Price"; }
+	td:nth-of-type(6):before { content: "Quantity"; }
+	td:nth-of-type(7):before { content: "Totals"; }
+	
+}
+    </style>
+</head>
+
+<body>
+    <div class="table-users">
+        <div class="header">Users</div>
+
+        <table cellspacing="0">
+            <tr>
+                <th></th>
+                <th>Product</th>
+                <th width="230">Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Totals</th>
+            </tr>
+
+            <tr>
+                <td><span style='font-size:20px;'>&#10005;</span></td>
+                <td><img src="https://i.picsum.photos/id/1005/100/100.jpg" alt="" /></td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                <td>$80.00</td>
+                <td>1</td>
+                <td>$80.00</td>
+                
+            </tr>
+
+            <tr>
+                <td><span style='font-size:20px;'>&#10005;</span></td>
+                <td><img src="https://i.picsum.photos/id/1027/100/100.jpg" alt="" /></td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                <td>$100.00</td>
+                <td>1</td>
+                <td>$100.00</td>
+               
+            </tr>
+
+            <tr>
+                <td><span style='font-size:20px;'>&#10005;</span></td>
+                <td><img src="https://i.picsum.photos/id/64/100/100.jpg" alt="" /></td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                <td>$40.00</td>
+                <td class="border">1</td>
+                <td>$40.00</td>
+                
+            </tr>
+
+            <tr>
+                <td><span style='font-size:20px;'>&#10005;</span></td>
+                <td><img src="https://i.picsum.photos/id/1025/100/100.jpg" alt="" /></td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </td>
+                <td>$34.00</td>
+                <td>1</td>
+                <td>$34.00</td>
+                
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
